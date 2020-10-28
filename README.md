@@ -9,47 +9,47 @@ https://caspg.github.io/react-sharingbuttons
 # Installation
 
 ```bash
-  yarn add react-sharingbuttons
+  yarn add tons613-react-sharingbuttons
 ```
 
 or alternatively:
 
 ```bash
-npm install --save react-sharingbuttons
+npm install --save tons613-react-sharingbuttons
 ```
 
 # Usage
 
 ```javascript
-import { Facebook, Twitter } from 'react-sharingbuttons'
+import { Facebook, Twitter } from "tons613-react-sharingbuttons";
 ```
 
 **NOTE**
 If you care about your bundle size, you can import each button separately.
 
 ```javascript
-import Facebook from 'react-sharingbuttons/dist/buttons/Facebook'
-import Twitter from 'react-sharingbuttons/dist/buttons/Twitter'
+import Facebook from "react-sharingbuttons/dist/buttons/Facebook";
+import Twitter from "react-sharingbuttons/dist/buttons/Twitter";
 ```
 
 Import predefined css:
 
 ```javascript
-import 'react-sharingbuttons/dist/main.css'
+import "react-sharingbuttons/dist/main.css";
 ```
 
 ```javascript
 const sharingButtons = () => {
-  const url = 'https://github.com/caspg/react-sharingbuttons'
-  const shareText = 'Check this site!'
+  const url = "https://github.com/caspg/react-sharingbuttons";
+  const shareText = "Check this site!";
 
   return (
     <div>
       <Facebook url={url} />
       <Twitter url={url} shareText={shareText} />
     </div>
-  )
-}
+  );
+};
 ```
 
 [See the example](https://github.com/caspg/react-sharingbuttons/blob/master/www/components/SharingButtons.jsx#L15)
@@ -58,9 +58,11 @@ const sharingButtons = () => {
 
 You can customize buttons further to meet your needs. For example, following html will be rendered for `Twitter` button:
 
-
 ```html
-<a href="https://your.website" class="react-sharing-button__link react-sharing-button--twitter">
+<a
+  href="https://your.website"
+  class="react-sharing-button__link react-sharing-button--twitter"
+>
   <svg class="react-sharing-button__icon">...</svg>
   <span class="react-sharing-button__text">Share me</span>
 </a>
@@ -70,21 +72,20 @@ You can customize buttons further to meet your needs. For example, following htm
 
 **common props:**
 
-* `text` - text which is displayed inside button, default to button name.
-* `onClick` - onClick event passed to `a` tag.
+- `text` - text which is displayed inside button, default to button name.
+- `onClick` - onClick event passed to `a` tag.
 
 **button specific props:**
 
-
-|               |                                                             |
-|---------------|-------------------------------------------------------------|
-| **Email**     | `text`, `url`, `subject`                                    |
-| **Facebook**  | `text`, `url`                                               |
-| **Google**    | `text`, `url`                                               |
-| **Pinterest** | `text`, `url`, `shareText` (a pin description), `mediaSrc`  |
-| **Reddit**    | `text`, `url`                                               |
-| **Twitter**   | `text`, `url`, `shareText` (a tweet text),                  |
-| **LinkedIn**  | `text`, `url`, `shareText` (a tweet text),                  |
-| **Tumblr**    | `text`, `url`, `title`, `caption`, `content`                |
-| **WhatsApp**  | `text`, `url`, `message` (message text),                    |
-| **Telegram**  | `text`, `url`, `message` (message text),                    |
+|               |                                                            |
+| ------------- | ---------------------------------------------------------- |
+| **Email**     | `text`, `url`, `subject`                                   |
+| **Facebook**  | `text`, `url`                                              |
+| **Google**    | `text`, `url`                                              |
+| **Pinterest** | `text`, `url`, `shareText` (a pin description), `mediaSrc` |
+| **Reddit**    | `text`, `url`                                              |
+| **Twitter**   | `text`, `url`, `shareText` (a tweet text),                 |
+| **LinkedIn**  | `text`, `url`, `shareText` (a tweet text),                 |
+| **Tumblr**    | `text`, `url`, `title`, `caption`, `content`               |
+| **WhatsApp**  | `text`, `url`, `message` (message text),                   |
+| **Telegram**  | `text`, `url`, `message` (message text),                   |

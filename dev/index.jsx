@@ -1,7 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from "react";
+import { render } from "react-dom";
 
-import '../src/main.css'
+import "../src/main.css";
 
 import {
   Email,
@@ -11,18 +11,20 @@ import {
   Reddit,
   Tumblr,
   Twitter,
-} from '../src'
+  WhatsApp,
+  Telegram,
+} from "../src";
 
 const Buttons = () => {
-  const url = 'https://github.com/caspg'
-  const shareText = 'check this site yo'
-  const mediaSrc = 'http://placekitten.com/g/200/300'
+  const url = "https://github.com/caspg";
+  const shareText = "check this site yo";
+  const mediaSrc = "http://placekitten.com/g/200/300";
 
   const tumblr = {
-    title: 'some-title',
-    caption: 'some-caption',
-    content: 'some-content',
-  }
+    title: "some-title",
+    caption: "some-caption",
+    content: "some-content",
+  };
 
   return (
     <div>
@@ -40,11 +42,9 @@ const Buttons = () => {
       />
 
       <Twitter url={url} shareText={shareText} />
+      <Telegram url={url} message={shareText} />
     </div>
-  )
-}
+  );
+};
 
-render(
-  <Buttons />,
-  document.getElementById('app'),
-)
+render(<Buttons />, document.getElementById("app"));

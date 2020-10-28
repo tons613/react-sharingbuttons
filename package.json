@@ -1,9 +1,9 @@
 {
-  "name": "react-sharingbuttons",
-  "version": "1.0.0",
+  "name": "tons613-react-sharingbuttons",
+  "version": "1.0.5",
   "description": "Lightweight social sharing buttons for React.",
   "main": "dist/index.js",
-  "author": "Kacper Golinski <kacper.golinski@gmail.com>",
+  "author": "Forked by tony from: Kacper Golinski <kacper.golinski@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
@@ -17,7 +17,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "homepage": "https://caspg.github.io/react-sharingbuttons",
+  "homepage": "https://github.com/tons613/react-sharingbuttons",
   "keywords": [
     "react",
     "react-component",
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/caspg/react-sharingbuttons.git"
+    "url": "https://github.com/tons613/react-sharingbuttons.git"
   },
   "files": [
     "dist"
